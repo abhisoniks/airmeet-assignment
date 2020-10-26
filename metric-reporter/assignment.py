@@ -2,6 +2,7 @@ from flask import Flask, json, request
 
 api = Flask(__name__)
 
+# In memory data structure to store metric data
 metric_data={
 }
 
@@ -41,4 +42,4 @@ def post_metrics():
 
 
 if __name__ == '__main__':
-    api.run(host='0.0.0.0', port="8080")
+    api.run(host='0.0.0.0')
